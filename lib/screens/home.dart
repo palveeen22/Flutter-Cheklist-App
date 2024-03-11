@@ -11,26 +11,44 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          backgroundColor: tdBGColor,
-          title: Row(
-            children: [
-              Icon(
-                Icons.menu,
-                color: tdBlack,
-                size: 30,
-              ),
-              Container(
-                  height: 40,
-                  width: 40,
-                  child: ClipRRect(
-                    child: Image.asset('assets/images/alvin2.jpg'),
-                  ))
-            ],
-          )),
+      backgroundColor: tdBGColor,
+      appBar: _buildAppBar(),
       body: Container(
-        child: Text('This is home screen'),
+        padding: EdgeInsets.symmetric(horizontal: 15),
+        child: Column(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: TextField(),
+            ),
+          ],
+        ),
       ),
     );
   }
+}
+
+AppBar _buildAppBar() {
+  return AppBar(
+      backgroundColor: tdBGColor,
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Icon(
+            Icons.menu,
+            color: tdBlack,
+            size: 30,
+          ),
+          Container(
+              height: 40,
+              width: 40,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(50),
+                child: Image.asset('assets/images/alvin2.jpg'),
+              ))
+        ],
+      ));
 }
