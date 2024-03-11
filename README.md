@@ -4,6 +4,19 @@ A new Flutter project.
 
 ## Getting Started
 
+Step-1: Download or clone this repository -
+
+    git clone https://github.com/palveeen22/learn-flutter-todo-list.git
+    
+
+Step-2: Go to project root and execute the following command in console to get the required dependencies -
+
+    flutter pub get 
+    
+Step-3: Run flutter project -
+
+    flutter run
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
