@@ -6,7 +6,7 @@ A new Flutter project.
 
 Step-1: Download or clone this repository -
 
-    git clone https://github.com/palveeen22/learn-flutter-todo-list.git
+    git clone https://github.com/palveeen22/Flutter-Cheklist-App.git
     
 
 Step-2: Go to project root and execute the following command in console to get the required dependencies -
