@@ -4,6 +4,9 @@ import '../model/todo.dart';
 import '../constants/colors.dart';
 import '../widgets/todoItem.dart';
 
+// Saya asumsikan bahwa TabbarExample berada dalam direktori tab
+// import '../tab/tab.dart';
+
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
 
@@ -13,6 +16,8 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final todosList = ToDo.todoList();
+  // final tabBar = TabbarExample(); // Menggunakan TabbarExample
+
   List<ToDo> _foundToDo = [];
   final _todoController = TextEditingController();
 
@@ -125,6 +130,7 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
+      // bottomNavigationBar: tabBar, // Menempatkan TabbarExample di sini
     );
   }
 
