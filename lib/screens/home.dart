@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:myapp/constants/colors.dart';
+import 'package:myapp/widgets/todoItem.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -14,9 +16,28 @@ class _HomeState extends State<Home> {
       backgroundColor: tdBGColor,
       appBar: _buildAppBar(),
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 15),
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
         child: Column(
-          children: [searchBox()],
+          children: [
+            searchBox(),
+            Expanded(
+              child: ListView(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 50, bottom: 20),
+                    child: Text(
+                      'All Todos',
+                      style: TextStyle(
+                          color: tdBlack,
+                          fontSize: 30,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            TodoItem()
+          ],
         ),
       ),
     );
