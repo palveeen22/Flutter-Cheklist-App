@@ -4,7 +4,6 @@ A new Flutter project.
 
 ![Screenshot](assets/images/ssNew.png)
 
-
 ## Getting Started
 
 Step-1: Download or clone this repository -
